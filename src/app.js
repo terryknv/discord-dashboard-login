@@ -16,7 +16,7 @@ const authRoute = require('./routes/auth');
 const dashboardRoute = require('./routes/dashboard');
 
 app.use(session({
-    secret: 'some random secret',
+    secret: 'secret',
     cookie: {
         maxAge: 60000 * 60 * 24
     },
